@@ -250,17 +250,11 @@ header .logo {
   display: flex;
   justify-content: space-between;
 }
-.item {
-  max-width: 270px;
-}
 .list-mission {
   display: flex;
   justify-content: space-between;
   
 }
-/* .item-mission {
-
-} */
 .list-team {
   text-align: center;
   display: flex;
@@ -341,9 +335,6 @@ header .logo {
   padding-left: 24px;
   padding-bottom: 20px;   
 }
-
-
-
 .icon {
   display: flex;
   padding-right: 10px;
@@ -357,27 +348,6 @@ header .logo {
 }
 .vector {
   fill: var(--sec-color);
-}
-.anthena:nth-child(1) {
-  background-color: #F5F4FA;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-size: 70px;
-}
-.logo-item {
-  display: flex;
-  justify-content: space-between;
-}
-.logo-icon {
-  width: 170px;
-  height: 92px;
-  box-sizing: border-box;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  box-sizing: auto;
-}
-.logotipes {
-  fill: #AFB1B8;
 }
 .social {
   display: flex;
@@ -414,6 +384,47 @@ header .logo {
 .btn-soc:focus {
   background-color: var(--active-color);
   fill: white;
+}
+.anthena {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.logo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logotipes {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  fill: #AFB1B8;
+}
+.logo-icon {
+  margin-right: 30px;
+}
+.logo-icon:last-child {
+  margin-right: 0;
+}
+.users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.klients {
+  color: white;
+}
+.hero {
+  background-image: url(../images/Img.svg);
 }
 
 
