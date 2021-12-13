@@ -425,17 +425,23 @@ header .logo {
   justify-content: center;
   align-items: center;
 }
-.logotipes {
+.logo-icon {
   width: 170px;
-  height: 92px; 
+  height: 92px;
+  fill: #AFB1B8;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-  fill: #AFB1B8; 
-}
-.logo-icon {
   margin-right: 30px;
+}
+ .logotipes:hover,
+ .logotipes:focus {
+  fill: #2196F3; 
+  background-color: white;
+ }
+
+ .logo-icon:hover,
+ .logo-icon:focus { 
+  border: 1px solid #2196F3;
 }
 .logo-icon:last-child {
   margin-right: 0;
@@ -460,11 +466,12 @@ header .logo {
 
 
 .users {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
-.klients {
+.klients .social {
+  display: block;
   color: white;
 }
 .hero {
