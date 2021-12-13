@@ -52,7 +52,8 @@ header {
 .links:hover {
   color: var(--active-color);
 }
-.contacts:hover {
+.contacts:hover,
+.contacts:focus {
   color: var(--active-color);
 }
 .title-button {
@@ -112,7 +113,6 @@ header {
   line-height: 1.9;
   color: #757575;
 }
-
 .address,
 .communication {
   font-family: Roboto;
@@ -132,7 +132,7 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-  button:hover, button:focus {
+button:hover, button:focus {
   color: var(--primary-bg-color);
   background: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -256,8 +256,8 @@ header .logo {
   
 }
 .list-team {
-  text-align: center;
   display: flex;
+  text-align: center;
   justify-content: center;
 }
 .item-team {
@@ -335,19 +335,17 @@ header .logo {
   padding-left: 24px;
   padding-bottom: 20px;   
 }
-.icon {
-  display: flex;
-  padding-right: 10px;
-}
-.icon:hover {
-  fill: var(--active-color)
-}
 .envelope {
   fill: var(--active-color);
   margin-right: 10px;
 }
 .vector {
-  fill: var(--sec-color);
+  margin-right: 10px;
+  fill: #757575;
+}
+.vector:hover, 
+.vector:focus {
+  fill: var(--active-color);
 }
 .social {
   display: flex;
@@ -385,16 +383,43 @@ header .logo {
   background-color: var(--active-color);
   fill: white;
 }
-.anthena {
+.list-benefits {
   display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin-top: 94px;
+}
+.item-anthena .benefits .sub-title {
+  width: 270px;
+  display: block;
+}
+.item {
+  display: block;
+  width: 270px;
+  height: 251px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.item:last-child {
+  margin-right: 0%;
+}
+.item-anthena {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   background-color: #F5F4FA;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
   border-radius: 4px;
+  margin-bottom: 30px;
 }
+
+
+
+
+
 .logo-item {
   display: flex;
   justify-content: center;
@@ -402,12 +427,12 @@ header .logo {
 }
 .logotipes {
   width: 170px;
-  height: 92px;
+  height: 92px; 
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
-  fill: #AFB1B8;
+  fill: #AFB1B8; 
 }
 .logo-icon {
   margin-right: 30px;
@@ -415,6 +440,25 @@ header .logo {
 .logo-icon:last-child {
   margin-right: 0;
 }
+.btn-clients {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  fill: #AFB1B8;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+
+
+
+
 .users {
   display: flex;
   justify-content: center;
@@ -425,7 +469,5 @@ header .logo {
 }
 .hero {
   background-image: url(../images/Img.svg);
+  
 }
-
-
-
