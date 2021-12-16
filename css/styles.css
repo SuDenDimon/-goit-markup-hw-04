@@ -19,6 +19,10 @@ header .container {
 header {
   border-bottom: 1px;
 }
+header .container {
+  margin-bottom: 94px;
+  border-bottom: 1px solid #ECECEC;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -321,6 +325,10 @@ header .logo {
   border-bottom: 1px solid #eee; 
   position: relative;
 }
+.item-img:hover,
+.item-img:focus {
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+}
 .images .item-img:nth-child(3n) {
   margin-right: 0;
 }
@@ -336,8 +344,12 @@ header .logo {
   padding-bottom: 20px;   
 }
 .envelope {
-  fill: var(--active-color);
+  fill: #757575;
   margin-right: 10px;
+}
+.envelope:hover,
+.envelope:focus {
+  fill: var(--active-color);
 }
 .vector {
   margin-right: 10px;
@@ -415,11 +427,6 @@ header .logo {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-
-
-
-
-
 .logo-item {
   display: flex;
   justify-content: center;
@@ -438,7 +445,7 @@ header .logo {
   fill: #2196F3; 
   background-color: white;
  }
-
+ 
  .logo-icon:hover,
  .logo-icon:focus { 
   border: 1px solid #2196F3;
@@ -457,24 +464,59 @@ header .logo {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-
-
-
-
-
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 .users {
-  display: block;
+  margin-left: 70px;
+}
+.footer-one {
+  margin-left: 215px;
+}
+.soc-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer-link {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.klients .social {
-  display: block;
-  color: white;
+.footer-link:last-child {
+  margin-right: 0;
+}
+.btn-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: white;
+  background-color: rgba(255, 255, 255, 0.1); 
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-icon {
+  justify-content: center;
+  align-items: center;
+}
+.footer-icon:hover,
+.footer-icon:focus,
+.btn-footer:hover,
+.btn-footer:focus {
+  background-color: var(--active-color);
+  fill: white; 
+}
+.klients {
+   color: white;
 }
 .hero {
-  background-image: url(../images/Img.svg);
-  
+  background-image: url(../images/Img.svg);  
 }
+
+
