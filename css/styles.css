@@ -203,6 +203,13 @@ header .logo {
 .links li a:hover {
   color: var(--act-color); 
 }
+.icon:hover
+.icon:focus {
+  color: var(--active-color);
+}
+.nav-link:hover{
+   fill: red;
+}
 .contacts li:first-child a {
   margin-left: 0;
 }
