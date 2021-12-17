@@ -20,8 +20,8 @@ header {
   border-bottom: 1px;
 }
 header .container {
-  margin-bottom: 94px;
   border-bottom: 1px solid #ECECEC;
+  /* margin-bottom: 94px; */
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -47,6 +47,9 @@ header .container {
   color: #212121;
 }
 .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -204,12 +207,12 @@ header .logo {
   color: var(--act-color); 
 }
 .icon:hover
-.icon:focus {
-  color: var(--active-color);
-}
-.nav-link:hover{
-   fill: red;
-}
+.icon:focus
+.icon:focus use,
+.icon:hover use {
+    color: blue;
+    fill: blue;
+} 
 .contacts li:first-child a {
   margin-left: 0;
 }
@@ -248,7 +251,7 @@ header .logo {
   margin: 0 auto;
 } 
 .section {
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 .footer {
   padding: 60px 0;
@@ -471,6 +474,14 @@ header .logo {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.btn-clients:hover,
+.btn-clients:focus,
+.btn-clients:hover use,
+.btn-clients:focus use {
+  color: #188ce8;
+  fill: #188ce8;
+}
+
 .footer-container {
   display: flex;
   align-items: baseline;
@@ -512,8 +523,8 @@ header .logo {
   justify-content: center;
   align-items: center;
 }
-.footer-icon:hover,
-.footer-icon:focus,
+/* .footer-icon:hover,
+.footer-icon:focus, */
 .btn-footer:hover,
 .btn-footer:focus {
   background-color: var(--active-color);
@@ -524,6 +535,7 @@ header .logo {
 }
 .hero {
   background-image: url(../images/Img.svg);  
+  object-fit: contain;
 }
-
+ 
 
