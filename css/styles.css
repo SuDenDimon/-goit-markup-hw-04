@@ -502,6 +502,7 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 }
 .footer-link:last-child {
   margin-right: 0;
@@ -537,5 +538,10 @@ header .logo {
   background-image: url(../images/Img.svg);  
   object-fit: contain;
 }
- 
+.section-section {
+  background-color: #F5F4FA;
+  padding: 94px 0;
+  max-width: 1600px;
+  margin: 0 auto;
+} 
 
